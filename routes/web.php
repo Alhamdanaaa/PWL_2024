@@ -55,7 +55,7 @@ Route::get('/user/{name?}', function ($name='John') {
 });
 
 
-Route::resource('photos', PhotoController::class);
+// Route::resource('photos', PhotoController::class);
 
 Route::resource('photos', PhotoController::class)->only([ 'index', 'show'
 ]);
